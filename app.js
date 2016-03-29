@@ -8,7 +8,6 @@ app.use(express.static('/public'));
 app.use('/api', require('./routes/index.js'));
 
 app.get('/',function(req,res){
-	//res.send("Hi, you're home");
 	res.sendFile(__dirname+'/public/index.html')
 });
 

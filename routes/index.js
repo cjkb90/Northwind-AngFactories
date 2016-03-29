@@ -1,7 +1,9 @@
 var express = require('express');
 var router = express.Router();
+var models = require('../models/');
+var Salesman = models.Salesman;
 
-router.get('/add',function(req,res){
+router.post('/add',function(req,res){
 	res.send("Here you can add salespeople");
 });
 

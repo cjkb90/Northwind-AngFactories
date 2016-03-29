@@ -2,10 +2,26 @@
 <html>
 <head>
 	<title>Northwind Sales</title>
+	<link href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css' rel='stylesheet'>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js'></script>
+	<script src='./scripts/index.js' defer></script>
 </head>
-<body>
-	<h3>
-		Good morning sales guys!
-	</h3>
+<body ng-app = 'nwApp' ng-controller = 'SalesController'>
+	<h1> {{title}} </h1>
+	<div class="col-sm-12">
+		<p class = "col-xs-4">Sell</p>
+		<p class = "col-xs-4">Strategize</p>
+		<p class = "col-xs-4">Deliver</p>
+	</div>
+	<div class="col-xs-4">
+		<form method="POST">
+			<label for="name" class="col-sm-3">Name:</label>
+			<div class="col-xs-9">
+				<input name="name" type="text">
+			</div>
+		</form>
+		<!-- region buttons -->
+		<button>Save</button>
+	</div>
 </body>
 </html>
